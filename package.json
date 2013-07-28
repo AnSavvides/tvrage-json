@@ -1,0 +1,27 @@
+{
+    "name": "tvragejson",
+    "description": "A node.js API for the TVRage web services.",
+    "version": "0.1.0",
+    "author": {
+        "name": "Andreas Savvides",
+        "email": "andreas@nibbli.com"
+    },
+    "main": "index",
+    "respository": {
+        "type": "git",
+        "url": "https://github.com/AnSavvides/tvrage-json.git"
+    },
+    "keywords": [
+        "tvrage",
+        "json",
+        "api"
+    ],
+    "dependencies": {
+        "xml2js": "0.2.3",
+        "util": "0.4.9",
+        "request": "2.12.0"
+    },
+    "engines": {
+        "node": ">=0.8.15"
+    }
+}
