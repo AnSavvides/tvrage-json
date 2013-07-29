@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AnSavvides/tvrage-json.png)](https://travis-ci.org/AnSavvides/tvrage-json)
+
 # TV Rage JSON
 
 A node.js API for the [TVRage web services](http://services.tvrage.com/info.php?page=main); as per the name, all responses are JSON.
