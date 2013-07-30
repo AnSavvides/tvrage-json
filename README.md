@@ -38,7 +38,7 @@ TVRage.search("8511", function(response) {
 
 # What's next?
 * Add tests
-* Add [Grant](https://github.com/gruntjs/grunt)
+* Add [Grunt](https://github.com/gruntjs/grunt)
 
 # Contributing
 All contributions are welcome, feel free to fork this repository and open a pull request.
