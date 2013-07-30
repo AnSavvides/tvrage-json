@@ -36,6 +36,10 @@ TVRage.search("8511", function(response) {
 * `fullShowList` - Full TV show list
 * `fullSchedule` - Full TV schedule based on a two letter country representation as defined by [ISO 3166](http://www.iso.org/iso/country_codes)
 
+# What's next?
+* Add tests
+* Add [Grant](https://github.com/gruntjs/grunt)
+
 # Contributing
 All contributions are welcome, feel free to fork this repository and open a pull request.
 
