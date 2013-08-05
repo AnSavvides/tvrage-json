@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/AnSavvides/tvrage-json.png)](https://waffle.io/AnSavvides/tvrage-json)  
 [![Build Status](https://travis-ci.org/AnSavvides/tvrage-json.png)](https://travis-ci.org/AnSavvides/tvrage-json)
 
 # TV Rage JSON
