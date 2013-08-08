@@ -43,7 +43,7 @@ TVRage.search("8511", function(response) {
 * Return XML as served from TVRage without converting to JSON
 
 # Contributing
-All contributions are welcome, feel free to fork this repository and open a pull request.
+All contributions are welcome, feel free to fork `master`, make your changes and open a pull request.
 
 # License
 Licensed under the [MIT License](http://opensource.org/licenses/MIT)
