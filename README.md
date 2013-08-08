@@ -40,7 +40,7 @@ TVRage.search("8511", function(response) {
 
 # What's next?
 * Add some tests
-* Return XML as served from TVRage without converting to JSON
+* Add ability to optionally return XML as served from TVRage without converting to JSON
 
 # Contributing
 All contributions are welcome, feel free to fork `master`, make your changes and open a pull request.
