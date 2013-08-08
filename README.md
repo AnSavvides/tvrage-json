@@ -40,7 +40,7 @@ TVRage.search("8511", function(response) {
 
 # What's next?
 * Add some tests
-* Return XML as served from TVRage without converting to JSON
+* Add ability to optionally return XML as served from TVRage without converting to JSON
 
 # Contributing
 All contributions are welcome, feel free to fork `master`, make your changes and open a pull request.
@@ -54,6 +54,14 @@ To get up and running with grunt you need to do the following:
 `npm install grunt --save-dev`
 
 Upon making any code changes, make sure you run `grunt test` from within the project's directory to verify that there are no errors (this is done using the JSHint plugin mentioned above) - if there are any errors, make all necessary changes before opening a pull request.
+
+# Changelog
+
+## v0.1.2
+- Added Grunt
+
+## v0.1.1
+- Added David dependency management badge
 
 # License
 Licensed under the [MIT License](http://opensource.org/licenses/MIT)
