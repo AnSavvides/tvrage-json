@@ -1,7 +1,7 @@
 {
     "name": "tvragejson",
     "description": "A node.js API for the TVRage web services.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": {
         "name": "Andreas Savvides",
         "email": "andreas@nibbli.com"
