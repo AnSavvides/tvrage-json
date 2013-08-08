@@ -21,6 +21,11 @@
         "util": "0.4.9",
         "request": "2.12.0"
     },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-jshint": "~0.6.0",
+        "grunt-contrib-watch": "~0.5.1"
+    },
     "engines": {
         "node": ">=0.8.15"
     }
