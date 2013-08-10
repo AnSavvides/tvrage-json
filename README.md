@@ -57,6 +57,9 @@ Upon making any code changes, make sure you run `grunt test` from within the pro
 
 # Changelog
 
+### v0.1.3
+- Added a more elaborate .gitignore
+
 ## v0.1.2
 - Added Grunt
 
