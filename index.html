@@ -44,11 +44,11 @@
 <h1>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
 
-<div class="highlight highlight-js"><pre><span class="kd">var</span> <span class="nx">TVRage</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'tvragejson'</span><span class="p">);</span>
+<div class="highlight highlight-js"><pre><span class="kd">var</span> <span class="nx">TVRage</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"tvragejson"</span><span class="p">);</span>
 
 <span class="c1">// Search for a show by name, returning the first match.</span>
 <span class="nx">TVRage</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s2">"The Big Bang Theory"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">[</span><span class="s1">'Results'</span><span class="p">][</span><span class="s1">'show'</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">[</span><span class="s2">"Results"</span><span class="p">][</span><span class="s2">"show"</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
 <span class="p">});</span>
 
 <span class="c1">// Get information for a particular show - in this case we</span>
