@@ -13,11 +13,11 @@ A node.js API for the [TVRage web services](http://services.tvrage.com/info.php?
 # Usage
 
 ```js
-var TVRage = require('tvragejson');
+var TVRage = require("tvragejson");
 
 // Search for a show by name, returning the first match.
 TVRage.search("The Big Bang Theory", function(response) {
-    console.log(response['Results']['show'][0]);
+    console.log(response["Results"]["show"][0]);
 });
 
 // Get information for a particular show - in this case we
