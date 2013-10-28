@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>TVrage JSON by AnSavvides</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/AnSavvides/tvrage-json">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/AnSavvides/tvrage-json/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/AnSavvides/tvrage-json/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>TVrage JSON</h1>
+          <p>A node.js API for the TVRage web services</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/AnSavvides">AnSavvides</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="tv-rage-json" class="anchor" href="#tv-rage-json"><span class="octicon octicon-link"></span></a>TV Rage JSON</h1>
+
+<p>A node.js API for the <a href="http://services.tvrage.com/info.php?page=main">TVRage web services</a>; as per the name, all responses are JSON.</p>
+
+<h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<p><code>npm install tvragejson</code></p>
+
+<h1>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<div class="highlight highlight-js"><pre><span class="kd">var</span> <span class="nx">TVRage</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'tvragejson'</span><span class="p">);</span>
+
+<span class="c1">// Search for a show by name, returning the first match.</span>
+<span class="nx">TVRage</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s2">"The Big Bang Theory"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">[</span><span class="s1">'Results'</span><span class="p">][</span><span class="s1">'show'</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="p">});</span>
+
+<span class="c1">// Get information for a particular show - in this case we</span>
+<span class="c1">// are using the show ID for "The Big Bang Theory".</span>
+<span class="nx">TVRage</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s2">"8511"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+<span class="p">});</span>
+
+</pre></div>
+
+<h1>
+<a name="supported-methods" class="anchor" href="#supported-methods"><span class="octicon octicon-link"></span></a>Supported methods</h1>
+
+<ul>
+<li>
+<code>search</code> - Search shows by name</li>
+<li>
+<code>fullSearch</code> - Full search for shows by name</li>
+<li>
+<code>showInfo</code> - Show info based on a show id that can be acquired via <code>search</code> or <code>fullSearch</code>
+</li>
+<li>
+<code>fullShowInfo</code> - Full show info based on a show id that can be acquired via <code>search</code> or <code>fullSearch</code>
+</li>
+<li>
+<code>episodeList</code> - Episode list based on a show id that can be acquired via the <code>search</code> or <code>fullSearch</code>
+</li>
+<li>
+<code>episode_info</code> - Episode info based on a show id (attainable via <code>search</code> or <code>fullSearch</code>) and an episode (attainable via <code>episodeList</code>)</li>
+<li>
+<code>fullShowList</code> - Full TV show list</li>
+<li>
+<code>fullSchedule</code> - Full TV schedule based on a two letter country representation as defined by <a href="http://www.iso.org/iso/country_codes">ISO 3166</a>
+</li>
+</ul><h1>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h1>
+
+<p>All contributions are welcome, feel free to fork <code>master</code>, make your changes and open a pull request.</p>
+
+<p><a href="http://gruntjs.com/">Grunt</a> is used with the <a href="https://github.com/gruntjs/grunt-contrib-jshint">JSHint</a> and <a href="https://github.com/gruntjs/grunt-contrib-watch">Watch</a> plugins.
+To get up and running with grunt you need to do the following:</p>
+
+<ul>
+<li>Install the <a href="https://github.com/gruntjs/grunt-cli">Grunt Command Line Interface tools</a>:
+<code>npm install -g grunt-cli</code>
+</li>
+<li>Install the current Grunt version local to this project (so ensure you make this within the project's directory):
+<code>npm install grunt --save-dev</code>
+</li>
+</ul><p>Upon making any code changes, make sure you run <code>grunt test</code> from within the project's directory to verify that there are no errors (this is done using the JSHint plugin mentioned above) - if there are any errors, make all necessary changes before opening a pull request.</p>
+
+<h1>
+<a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>Changelog</h1>
+
+<h3>
+<a name="v013" class="anchor" href="#v013"><span class="octicon octicon-link"></span></a>v0.1.3</h3>
+
+<ul>
+<li>Added a more elaborate .gitignore</li>
+</ul><h2>
+<a name="v012" class="anchor" href="#v012"><span class="octicon octicon-link"></span></a>v0.1.2</h2>
+
+<ul>
+<li>Added Grunt</li>
+</ul><h2>
+<a name="v011" class="anchor" href="#v011"><span class="octicon octicon-link"></span></a>v0.1.1</h2>
+
+<ul>
+<li>Added David dependency management badge</li>
+</ul><h1>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>Licensed under the <a href="http://opensource.org/licenses/MIT">MIT License</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
