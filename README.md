@@ -57,13 +57,13 @@ Upon making any code changes, make sure you run `grunt test` from within the pro
 
 # Changelog
 
-### v0.1.3
+# v0.1.3
 - Added a more elaborate .gitignore
 
-## v0.1.2
+# v0.1.2
 - Added Grunt
 
-## v0.1.1
+# v0.1.1
 - Added David dependency management badge
 
 # License
