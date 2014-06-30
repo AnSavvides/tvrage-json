@@ -64,6 +64,7 @@ Upon making any code changes, make sure you run `grunt test` from within the pro
 # v0.2.0
 - Fix ECONNRESET from the TvRage API
 - The callback now takes two arguments, `err` and `result`
+- Drop node.js 0.6 support
 
 # v0.1.3
 - Added a more elaborate .gitignore
