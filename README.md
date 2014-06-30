@@ -42,10 +42,6 @@ TVRage.search("8511", function(err, response) {
 * `fullShowList` - Full TV show list
 * `fullSchedule` - Full TV schedule based on a two letter country representation as defined by [ISO 3166](http://www.iso.org/iso/country_codes)
 
-# What's next?
-* Add some tests
-* Add ability to optionally return XML as served from TVRage without converting to JSON
-
 # Contributing
 All contributions are welcome, feel free to fork `master`, make your changes and open a pull request.
 
