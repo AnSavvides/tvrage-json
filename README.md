@@ -16,14 +16,18 @@ A node.js API for the [TVRage web services](http://services.tvrage.com/info.php?
 var TVRage = require("tvragejson");
 
 // Search for a show by name, returning the first match.
-TVRage.search("The Big Bang Theory", function(response) {
-    console.log(response["Results"]["show"][0]);
+TVRage.search("The Big Bang Theory", function(err, response) {
+    if (!err) {
+        console.log(response["Results"]["show"][0]);
+    }
 });
 
 // Get information for a particular show - in this case we
 // are using the show ID for "The Big Bang Theory".
-TVRage.search("8511", function(response) {
-    console.log(response);
+TVRage.search("8511", function(err, response) {
+    if (!err) {
+        console.log(response);
+    }
 });
 
 ```
@@ -56,6 +60,10 @@ To get up and running with grunt you need to do the following:
 Upon making any code changes, make sure you run `grunt test` from within the project's directory to verify that there are no errors (this is done using the JSHint plugin mentioned above) - if there are any errors, make all necessary changes before opening a pull request.
 
 # Changelog
+
+# v0.2.0
+- Fix ECONNRESET from the TvRage API
+- The callback now takes two arguments, `err` and `result`
 
 # v0.1.3
 - Added a more elaborate .gitignore
