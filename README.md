@@ -57,8 +57,12 @@ Upon making any code changes, make sure you run `grunt test` from within the pro
 
 # Changelog
 
+# v0.2.1
+- Added xml2js parser config to get back objects, not arrays
+- Update dependencies
+
 # v0.2.0
-- Fix ECONNRESET from the TvRage API
+- Fix `ECONNRESET` from the TvRage API
 - The callback now takes two arguments, `err` and `result`
 - Drop node.js 0.6 support
 
